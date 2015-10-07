@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content=""/>
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta http-equiv="x-rim-auto-match" content="none" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/nation.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="	css/swiper.min.css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url('./img/country1.png');" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper usa">
+            <div class="swiper-slide">
+            	<div class="title-wrap ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" >
+            		<div class="ani title" data-swiper-parallax="-100" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0s" >美国</div>
+                	<div class="ani subtitle" data-swiper-parallax="-200" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">霸道总裁白头鹰</div>
+            	</div>
+                
+                <div class="pic ani" data-swiper-parallax="-500" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"   >
+                	<div class="dialog ani" src="img/dialog.png"><B></B>usiness is business.</div>
+                    <img swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"   src="img/usa-avatar.png" />
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="scale" data-swiper-parallax="-500" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" >
+                    <img class="ani"id=" scale" swiper-animate-effect="zoomIn" swiper-animate-duration="0.3s" swiper-animate-delay="0s"src="img/prc-scale-blue.png" />
+                </div>
+                <div class="text" data-swiper-parallax="-300" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s" >
+                    <p>美国经济是美国军事实力的强大保证，美国军事科技、军事思想和军费开支都是世界第一，现在其军事力量正在向外层空间发展，武装到牙齿、零伤亡以逐渐接近，美国的反导系统十分先进。</p>
+                    <p>美国拥有最先进且规模最庞大的战略轰炸机群和战斗机群，空军侦察，预警系统先进而完善。世界上只有少数几个国家有少量重型轰炸机，而美国则是清一色的重型轰炸机。</p>
+                </div>
+                <a class="btn ani" href="index.html" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">Back
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        parallax: true,
+        speed: 600,
+        direction: 'vertical',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    swiperAnimateCache(swiper); //隐藏动画元素 
+    swiperAnimate(swiper); //初始化完成开始动画
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  } 
+    });
+    </script>
+</html>
