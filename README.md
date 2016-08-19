@@ -258,9 +258,4 @@ sp3.finish(function(){
 	sp4.run();
 })
 ......
-```  
-运行代码：  
-![最终效果](https://raw.githubusercontent.com/cyclegtx/burberryshow/master/images/3.gif)    
-
-
-更多教程请访问：[ued.sexy](http://ued.sexy)  
+``` 
