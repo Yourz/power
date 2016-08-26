@@ -1,4 +1,4 @@
-各国战力对比(http://yourz.github.io/power)
+[各国战力对比](http://yourz.github.io/power)
 ============
 遮罩效果是利用css3的```-webkit-mask```来实现的。  
 ```-webkit-mask```类似于photoshop里面的蒙板，在背景图片上加上一层蒙板，背景中的图片会透过蒙板中的白色部分显示出来，蒙板中的透明部分则遮挡住了背景。  
